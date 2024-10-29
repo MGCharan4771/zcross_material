@@ -1,0 +1,26 @@
+<mvc:View controllerName="zcrossmaterial.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table items="{/Material_DetSet}" >
+                <columns>
+                    <Column >
+                        <Text text="Material Number"></Text>
+                    </Column>
+                    <Column >
+                        <Text text="Material Description"></Text>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Navigation" press="onPressRow" >
+                        <cells>
+                            <Text text="{Mat_No}"></Text>
+                            <Text text="{Mat_Des}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
